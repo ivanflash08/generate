@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Генератор Паролей</title>
+  <link rel="shortcut icon" href="img/1212.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediaQuery.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header class="alert" role="alert" >
+    <a href="#"><img src="img/logo.png" class="logoIco" alt="..."></a>
+  </header>
+
+  <div class="container">
+    <p class="h2 m-3" role="alert">Добро пожаловать в Генератор паролей!</p>
+    <p class="h5 m-3" >Здесь можно создать пароли разной длины и сложности </p>
+    <div class="checkbox justify-content-center">
+      <div class="blockType">
+        <div class="wrapp">
+            <input id="numStyle" type="checkbox">Цыфры
+        </div>
+          <div class="wrapp">
+            <input id="stringStyle" type="checkbox">Строчные
+        </div>
+          <div class="wrapp">
+            <input id="regStyle" type="checkbox">Прописные
+        </div>
+      </div>
+      </div>
+      <div class="blockOne pb-1 m-1" title="Задайте значения для создания пароля">
+        <p class="lenght">Длина пароля</p>
+        <input type="range" id="rngOne" value="0" min="4" max="30" step="1">
+        <div id="rngInfo" class="ml-2">4</div>
+      </div>
+    <div class="result mt-4" >
+      <button id="start" type="button" class="btn btn-dark " title="Получить случайный пароль">Сгенерировать</button>
+      <div id="out"></div>
+      <button id="userButton" type="button" class="btn btn-dark" title="Скопировать в буфер ">Скопировать</button>
+    </div>
+  </div>
+</div>
+<footer>
+  <div id="info">
+    <button type="button" class="btn btn-outline-light">
+      <img class="ico" src="img/instagram.png" alt="">
+      <a href="https://www.instagram.com/ne_imba/" target="_blank">Ne_imba</a>
+    </button>
+    <button type="button" class="btn btn-outline-light">
+      <img class="ico" src="img/facebook-f.png" alt="">
+      <a href="https://www.facebook.com/profile.php?id=100011982708621" target="_blank">Ivan Yasinskiy</a>
+    </button>
+    <button type="button" class="btn btn-outline-light">
+      <img class="ico" src="img/telegram.png" alt="">
+      <a href="https://web.telegram.org/#/im?p=u516398846_11423432021464098220" target="_blank">Ivan Yasinskiy</a>
+    </button>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,156 @@
+
+header{
+  min-height: 100px;
+  background-image: rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 95%;
+}
+
+body{
+  background-image:url(/OSPanel/generate/img/blue-geometric-background.jpg);
+  background-size: cover;
+}
+.logoIco{
+  width: 170px;
+  height: 80px;
+  margin-left: 15% ;
+  margin-top: 2%;
+}
+.ico{
+  height: 25px;
+  width: 25px;
+}
+a, a:hover{
+  color: black;
+  text-decoration: none;
+}
+#start{
+  display: none;
+}
+
+#info{
+  width: 150px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.h2{
+    font-family: Philosopher;
+    font-weight: 700;
+}
+.h5{
+  animation: show 3s ;
+  padding: 30px 0;
+}
+p{
+  cursor: default;
+}
+
+.container{
+  min-height: 603px;
+  width: 70%;
+  padding: 60px;
+  border-radius: 4px;
+  background-color: #fff;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  text-align: center;
+  opacity: .8;
+}
+
+img{
+  width: 35px;
+  height: 35px;
+}
+
+.blockOne{
+  background-color: #fffdf2;
+  border-radius: 15px;
+}
+
+.blockType{
+display: flex;
+justify-content: space-around;
+
+}
+
+
+#outPassword{
+  background-color: #a8acb3;
+  margin: 20px 0;
+  font-size: 25px;
+  border-radius: 5px;
+  animation: show 1s ;
+}
+
+.lenght{
+  margin: 5px;
+}
+
+.checkbox{
+display: flex;
+flex-direction: column;
+padding: 40px 0;
+}
+
+input{
+  cursor: pointer;
+}
+
+.btn{
+  margin: 2px 0;
+  border: none;
+}
+
+.result{
+  min-height: auto;
+}
+.wrapp{
+
+}
+#userButton{
+height: 37px;
+margin: 3px;
+display: none;
+}
+
+#userButton1{
+height: 37px;
+margin: 3px auto;
+display: block;
+animation: show 1s ;
+}
+
+
+/* Стили ползунка */
+input[type=range]{
+    -webkit-appearance: none;
+        width: 90%;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+
+    height: 10px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background: #5b88b1;
+    margin-top: -7px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
