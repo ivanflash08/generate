@@ -9,11 +9,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mediaQuery.css">
+  <link rel="stylesheet" href="css/checkBox.css">
+
   <script src="js/script.js"></script>
 </head>
 <body>
   <header class="alert" role="alert" >
-    <a href="#"><img src="img/logo.png" class="logoIco" alt="..."></a>
+    <img src="img/logo.png" class="logoIco" alt="..."href="#">
   </header>
 
   <div class="container">
@@ -22,43 +24,47 @@
     <div class="checkbox justify-content-center">
       <div class="blockType">
         <div class="wrapp">
-            <input id="numStyle" type="checkbox">Цыфры
+            <input type="checkbox" id="numStyle" class="css-checkbox f"/>
+              <label for="numStyle" name="numStyle" class="css-label lite-x-green">Цыфры</label>
         </div>
           <div class="wrapp">
-            <input id="stringStyle" type="checkbox">Строчные
+            <input type="checkbox" id="stringStyle" class="css-checkbox f"/>
+            <label for="stringStyle" name="stringStyle_lbl" class="css-label lite-x-green">Строчные</label>
         </div>
           <div class="wrapp">
-            <input id="regStyle" type="checkbox">Прописные
+            <!-- <input class="f" id="regStyle" type="checkbox">Прописные
+            <label for="checkbox"></label> -->
+            <input  type="checkbox" id="regStyle" class="css-checkbox f"/>
+						<label for="regStyle" name="regStyle_lbl" class="css-label lite-x-green">Прописные</label>
         </div>
       </div>
-      </div>
-      <div class="blockOne pb-1 m-1" title="Задайте значения для создания пароля">
+    </div>
+    <div class="blockOne pb-1 m-1" title="Задайте значения для создания пароля">
         <p class="lenght">Длина пароля</p>
-        <input type="range" id="rngOne" value="0" min="4" max="30" step="1">
+        <input class="f" type="range" id="rngOne" value="0" min="4" max="30" step="1">
         <div id="rngInfo" class="ml-2">4</div>
-      </div>
-    <div class="result mt-4" >
-      <button id="start" type="button" class="btn btn-dark " title="Получить случайный пароль">Сгенерировать</button>
-      <div id="out"></div>
+    </div>
+    <div class="result " >
+      <div id="outPassword">Выберите тип создания пароля!</div>
       <button id="userButton" type="button" class="btn btn-dark" title="Скопировать в буфер ">Скопировать</button>
     </div>
+
+      <p class="h5" >Чем грозит взлом аккаунта?
+      <ul>Если будете использовать ненадежный пароль, хакер сможет:
+        <li>Украсть данные вашей карты.</li>
+        <li>Получить доступ к вашим другим аккаунтам.</li>
+        <li>Уничтожить ваш сайт.</li>
+        <li>Украсть любую личную информацию.</li>
+      </ul>
+     </p>
+     <div id="info" class="m-4">
+        <a href="https://www.instagram.com/ne_imba/" target="_blank"><img class="ico" src="img/instagram.png" alt=""></a>
+        <a href="https://www.facebook.com/profile.php?id=100011982708621" target="_blank"><img class="ico" src="img/facebook-f.png" alt=""></a>
+        <a href="https://web.telegram.org/#/im?p=u516398846_11423432021464098220" target="_blank"><img class="ico" src="img/telegram.png" alt=""></a>
+      </button>
+    </div>
   </div>
-</div>
 <footer>
-  <div id="info">
-    <button type="button" class="btn btn-outline-light">
-      <img class="ico" src="img/instagram.png" alt="">
-      <a href="https://www.instagram.com/ne_imba/" target="_blank">Ne_imba</a>
-    </button>
-    <button type="button" class="btn btn-outline-light">
-      <img class="ico" src="img/facebook-f.png" alt="">
-      <a href="https://www.facebook.com/profile.php?id=100011982708621" target="_blank">Ivan Yasinskiy</a>
-    </button>
-    <button type="button" class="btn btn-outline-light">
-      <img class="ico" src="img/telegram.png" alt="">
-      <a href="https://web.telegram.org/#/im?p=u516398846_11423432021464098220" target="_blank">Ivan Yasinskiy</a>
-    </button>
-  </div>
 </footer>
 </body>
 </html>

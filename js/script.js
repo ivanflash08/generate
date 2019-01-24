@@ -1,9 +1,16 @@
 window.onload = function() {
 
   let rng1 = document.getElementById('rngOne');
-  let con = document.getElementById('out');
+  let con = document.getElementById('outPassword');
 
+  let checkBoxOne = document.getElementById('numStyle');
+  let checkBoxTwo = document.getElementById('stringStyle');
+  let checkBoxThere = document.getElementById('regStyle');
+  let reloadIco = document.querySelector('.logoIco').onclick =function reload() {
+    document.location.reload();
+  }
   document.getElementById ('rngOne').oninput = gen;
+
 
   function gen(){
     rng1;
@@ -21,14 +28,12 @@ function generate() {
     let possibleA12 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     let possibleAbc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     let possibleAb1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    let checkBoxOne = document.getElementById('numStyle');
-    let checkBoxTwo = document.getElementById('stringStyle');
-    let checkBoxThere = document.getElementById('regStyle');
 
       if(checkBoxOne.checked && !checkBoxTwo.checked && !checkBoxThere.checked){
         for (let i = 0; i < rng1.value; i++)
         text += possible123.charAt(Math.floor(Math.random() * possible123.length));
         button.id = 'userButton1';
+        con.style='color: black;';
         return text;
       }
 
@@ -36,6 +41,7 @@ function generate() {
         for (let i = 0; i < rng1.value; i++)
         text += possibleabc.charAt(Math.floor(Math.random() * possibleabc.length));
         button.id = 'userButton1';
+        con.style='color: black;';
         return text;
       }
 
@@ -43,6 +49,7 @@ function generate() {
         for (let i = 0; i < rng1.value; i++)
         text += possibleABC.charAt(Math.floor(Math.random() * possibleABC.length));
         button.id = 'userButton1';
+        con.style='color: black;';
         return text;
       }
 
@@ -50,6 +57,7 @@ function generate() {
         for (let i = 0; i < rng1.value; i++)
         text += possibleabc123.charAt(Math.floor(Math.random() * possibleabc123.length));
         button.id = 'userButton1';
+        con.style='color: black;';
         return text;
       }
 
@@ -57,6 +65,7 @@ function generate() {
         for (let i = 0; i < rng1.value; i++)
         text += possibleA12.charAt(Math.floor(Math.random() * possibleA12.length));
         button.id = 'userButton1';
+        con.style='color: black;';
         return text;
       }
 
@@ -64,6 +73,7 @@ function generate() {
         for (let i = 0; i < rng1.value; i++)
         text += possibleAbc.charAt(Math.floor(Math.random() * possibleAbc.length));
         button.id = 'userButton1';
+        con.style='color: black;';
         return text;
       }
 
@@ -71,28 +81,35 @@ function generate() {
         for (let i = 0; i < rng1.value; i++)
         text += possibleAb1.charAt(Math.floor(Math.random() * possibleAb1.length));
         button.id = 'userButton1';
+        con.style='color: black;';
         return text;
       }
 
       else{
-        text+= "Выберите тип создания пароля!!"
+        text+= 'Выберите тип создания пароля!';
         button.id = 'userButton';
-      return text;
+        con.style = 'color: #dc3545eb';
+        return text;
       }
-
   }
   //  кнопка для мобильной версии
-  document.querySelector('#start').onclick = function gen(){
-    con.id = 'outPassword';
-    con.innerHTML = generate();
-    CopyElement();
-  }
-  rng1.onclick = function gen() {
-    con.id = 'outPassword';
-    con.innerHTML = generate();
-    CopyElement();
-  };
+  // document.querySelector('#start').onclick = function gen(){
+  //   con.id = 'outPassword';
+  //   con.innerHTML = generate();
+  //   CopyElement();
+  // }
 
+
+  var elements = document.querySelectorAll(".f");
+
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].onchange = function(event){
+      con.id = 'outPassword';
+      con.innerHTML = generate();
+      CopyElement();
+      button.innerHTML = 'Скопировать';
+    };
+  }
 
   // копирование пароля по нажатию кнопки
   var button = document.getElementById('userButton');
@@ -108,7 +125,7 @@ function generate() {
         console.log('Can`t copy, boss');
     }
     window.getSelection().removeAllRanges();
-    button.innerHTML = "Cкопировано"
+    button.innerHTML = "Cкопировано";
     });
   }
 }
