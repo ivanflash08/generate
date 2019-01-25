@@ -127,4 +127,17 @@ function generate() {
     button.innerHTML = "Cкопировано";
     });
   }
+
+//header Menu
+
+ let menu = document.querySelector('.menu');
+
+ let menuBottom = menu.getBoundingClientRect().bottom + window.pageYOffset;
+ window.onscroll = function() {
+       if (menu.classList.contains('fixed') && window.pageYOffset < menuBottom) {
+         menu.classList.remove('fixed');
+       } else if (window.pageYOffset > menuBottom) {
+         menu.classList.add('fixed');
+       }
+     };
 }
