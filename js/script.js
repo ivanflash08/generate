@@ -97,7 +97,6 @@ function generate() {
   //   con.id = 'outPassword';
   //   con.innerHTML = generate();
   //   CopyElement();
-  // }
 
 
   var elements = document.querySelectorAll(".f");

@@ -16,20 +16,20 @@ ul{
 li{
   font-weight: 400;
 }
+
+a{
+  margin: 0 15px;
+}
+
 .logoIco{
   width: 170px;
   height: 80px;
   cursor: pointer;
-
 }
 .ico{
   height: 25px;
   width: 25px;
 }
-a{
-  margin: 0 15px;
-}
-
 #info{
   justify-content: center;
 }
@@ -52,7 +52,8 @@ p{
 .container{
   min-height: 855px;
   width: 70%;
-  padding: 60px 60px 0 60px ;
+  padding: 60px 60px 0 60px;
+  margin-bottom: 100px;
   border-radius: 4px;
   background-color: #fff;
   border-color: #e5e6e9 #dfe0e4 #d0d1d5;
@@ -67,10 +68,15 @@ img{
   width: 35px;
   height: 35px;
 }
-
+.font{
+  font-size: 1.3rem;
+}
 .blockOne{
-  background-color: #fffdf2;
+  background-color: #4e958794;
   border-radius: 15px;
+  padding: 30px;
+  padding-bottom: 30px !important;
+  justify-content: center;
 }
 
 .blockType{
@@ -79,17 +85,12 @@ justify-content: space-around;
 
 }
 
-
 #outPassword{
   margin: 20px  auto;
-  font-size: 1em;
+  font-size: 1.2rem;
   border-radius: 5px;
   animation: show 1s ;
   color: #dc3545eb;
-}
-
-.lenght{
-  margin: 5px;
 }
 
 .checkbox{
@@ -108,11 +109,10 @@ input{
 }
 
 .result{
-  min-height: 100px;
+height: 100px;
 }
-
+ 
 #userButton{
-
 display: none;
 }
 

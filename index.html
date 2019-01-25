@@ -16,7 +16,7 @@
 <body>
   <header class="alert" role="alert" >
     <img src="img/logo.png" class="logoIco" alt="..."href="#">
-  </header>
+  </header> 
 
   <div class="container">
     <p class="h2 m-3" role="alert">Добро пожаловать в Генератор паролей!</p>
@@ -25,24 +25,22 @@
       <div class="blockType">
         <div class="wrapp">
             <input type="checkbox" id="numStyle" class="css-checkbox f"/>
-              <label for="numStyle" name="numStyle" class="css-label lite-x-green">Цыфры</label>
+              <label for="numStyle" name="numStyle" class="css-label lite-x-green"><p class="font">Цыфры</p></label>
         </div>
           <div class="wrapp">
             <input type="checkbox" id="stringStyle" class="css-checkbox f"/>
-            <label for="stringStyle" name="stringStyle_lbl" class="css-label lite-x-green">Строчные</label>
+            <label for="stringStyle" name="stringStyle_lbl" class="css-label lite-x-green"><p class="font">Строчные</p></label>
         </div>
           <div class="wrapp">
-            <!-- <input class="f" id="regStyle" type="checkbox">Прописные
-            <label for="checkbox"></label> -->
             <input  type="checkbox" id="regStyle" class="css-checkbox f"/>
-						<label for="regStyle" name="regStyle_lbl" class="css-label lite-x-green">Прописные</label>
+						<label for="regStyle" name="regStyle_lbl" class="css-label lite-x-green "><p class="font">Прописные</p></label>
         </div>
       </div>
     </div>
     <div class="blockOne pb-1 m-1" title="Задайте значения для создания пароля">
-        <p class="lenght">Длина пароля</p>
+        <p class="font">Длина пароля</p>
         <input class="f" type="range" id="rngOne" value="0" min="4" max="30" step="1">
-        <div id="rngInfo" class="ml-2">4</div>
+        <div id="rngInfo" class="ml-2 font">4</div>
     </div>
     <div class="result " >
       <div id="outPassword">Выберите тип создания пароля!</div>

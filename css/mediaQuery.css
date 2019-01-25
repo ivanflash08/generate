@@ -24,7 +24,7 @@ margin: 0;
     width: 88%;
     padding: 3%;
   }
-}
+} 
 @media screen and (max-width: 414px){
   .container{
     width: 98%;
@@ -37,13 +37,16 @@ margin: 0;
     font-size: 18px !important;
   }
 
-#outPassword{
-  font-size: 16px;
-}
+  #outPassword{
+    font-size: .9rem;
+  }
 }
 
 @media screen and (max-width: 320px){
+  .font{
+    font-size: 1rem
+  }
   #outPassword{
-    font-size: 12px;
+    font-size: .8rem;
   }
 }
