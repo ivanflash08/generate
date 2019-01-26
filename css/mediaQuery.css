@@ -11,9 +11,7 @@
     margin: 0 auto;
     display: flex;
   }
-  .container{
-    padding: 5%;
-  }
+
 }
 @media screen and (max-width: 570px){
 header{
@@ -24,7 +22,7 @@ margin: 0;
     width: 88%;
     padding: 3%;
   }
-} 
+}
 @media screen and (max-width: 414px){
   .container{
     width: 98%;

@@ -134,10 +134,11 @@ function generate() {
 
  let menuBottom = menu.getBoundingClientRect().bottom + window.pageYOffset;
  window.onscroll = function() {
-       if (menu.classList.contains('fixed') && window.pageYOffset < menuBottom) {
+       if (menu.classList.contains('fixed') && window.pageYOffset < 10) {
          menu.classList.remove('fixed');
-       } else if (window.pageYOffset > menuBottom) {
+       } else if (window.pageYOffset > 10) {
          menu.classList.add('fixed');
        }
+       console.log(window.pageYOffset);
      };
 }

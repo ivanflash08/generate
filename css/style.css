@@ -1,15 +1,13 @@
 header{
-  min-height: 100px;
   width: 70%;
-  text-align: center;
-  max-width: 1080px;
-  margin: 0 auto;
+  max-width: 1140px;
   box-sizing: border-box;
   position: fixed !important;
-  margin-left: 15%;
   z-index: 1;
-  margin-top: -100px;
-    transition: 0.5s;
+  margin: -140px -61px;
+  border: none !important;
+  transition: 0.5s;
+  padding: 0 !important;
 }
 
 body{
@@ -35,12 +33,17 @@ a{
   margin: 0 15px;
 }
 
+.backgroundHeader{
+    background: linear-gradient( #669d76fa, #fffffff5);
+    z-index: -100;
+    transition: 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
 .fixed {
-  position: fixed;
-  margin-left: 15%;
-  z-index: 1;
-  background-color: #ffffffd6;
-  transform: 1s;
+  opacity: 1;
 }
 .logoIco{
   width: 170px;
@@ -50,8 +53,8 @@ a{
 }
 
 .ico{
-  height: 25px;
-  width: 25px;
+  height: 35px;
+  width: 35px;
 }
 
 .headerUl{
@@ -62,6 +65,7 @@ margin: 20px auto;
 
 #info{
   justify-content: center;
+  margin-top: 50px!important;
 }
 
 #start{
@@ -83,7 +87,7 @@ p{
   min-height: 855px;
   width: 70%;
   padding: 60px 60px 0 60px;
-  margin: 100px auto;
+  margin: 79px auto;
   border-radius: 4px;
   background-color: #fff;
   border-color: #e5e6e9 #dfe0e4 #d0d1d5;
