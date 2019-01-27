@@ -92,11 +92,6 @@ function generate() {
         return text;
       }
   }
-  //  кнопка для мобильной версии
-  // document.querySelector('#start').onclick = function gen(){
-  //   con.id = 'outPassword';
-  //   con.innerHTML = generate();
-  //   CopyElement();
 
 
   var elements = document.querySelectorAll(".f");
@@ -134,11 +129,39 @@ function generate() {
 
  let menuBottom = menu.getBoundingClientRect().bottom + window.pageYOffset;
  window.onscroll = function() {
+    if (document.documentElement.clientWidth > 990) {
+
        if (menu.classList.contains('fixed') && window.pageYOffset < 10) {
          menu.classList.remove('fixed');
        } else if (window.pageYOffset > 10) {
          menu.classList.add('fixed');
        }
        console.log(window.pageYOffset);
-     };
+     }
+   }
+
+
+  window.onmousemove = function () {
+     if (document.documentElement.clientWidth > 990){
+     nav.style.display= 'flex';
+     headerHeight.style.height = '80px';
+    }
+   }
+////////показать спрятать меню
+  let headerHeight = document.querySelector('header');
+  let nav = document.querySelector('.headerUl');
+  let showHide = document.querySelector('.show').onclick =function toggle_visibility(){
+      if (nav.style.display =='flex'){
+          nav.style.display ='none';
+          headerHeight.style.height = '80px';
+          menu.classList.remove('fixed')
+        }
+      else{
+         headerHeight.style.height = '210px';
+         nav.style.display= 'flex';
+         menu.classList.add('fixed')
+       }
+     }
+
+
 }

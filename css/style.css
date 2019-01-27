@@ -1,13 +1,14 @@
 header{
   width: 70%;
   max-width: 1140px;
+  height: 80px;
   box-sizing: border-box;
-  position: fixed !important;
   z-index: 1;
-  margin: -140px -61px;
-  border: none !important;
-  transition: 0.5s;
-  padding: 0 !important;
+  margin: 0 auto;
+  border: none;
+  padding: 0;
+  position: sticky;
+  top: 0;
 }
 
 body{
@@ -20,26 +21,37 @@ ul{
   text-align: left;
   font-weight: 700;
 }
-li{
+a{
   font-weight: 400;
+  transition: .4s;
+}
+a:hover{
+    background: rgba(192, 217, 214, 0.83);
+}
+a:active{
+  background: rgba(164, 201, 222, 0.83);
 }
 span{
   font-size: 1.2rem;
   font-weight: 700;
   color: #000;
   text-decoration: none;
+
 }
-a{
+a {
   margin: 0 15px;
+}
+a:hover {
+  text-decoration: none;
 }
 
 .backgroundHeader{
-    background: linear-gradient( #669d76fa, #fffffff5);
+    background: linear-gradient( #4c9287, #ffffffc9);
     z-index: -100;
     transition: 0.5s;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 80px;
     opacity: 0;
 }
 .fixed {
@@ -60,7 +72,15 @@ a{
 .headerUl{
   display: flex;
   float: right;
-margin: 20px auto;
+  margin: 20px auto;
+}
+.show{
+  margin-top: 20px !important;
+  margin-right: 5px !important;
+  float: right;
+  width: 55px;
+  font-size: 1.1rem;
+  display: none;
 }
 
 #info{
@@ -87,9 +107,9 @@ p{
   min-height: 855px;
   width: 70%;
   padding: 60px 60px 0 60px;
-  margin: 79px auto;
+  margin-bottom: 80px;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #ffffffc9;
   border-color: #e5e6e9 #dfe0e4 #d0d1d5;
   border-width: 1px;
   border-style: solid;
