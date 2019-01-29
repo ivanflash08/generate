@@ -62,13 +62,23 @@ border-radius:  0 0 5px 5px;
   text-decoration: none;
   box-sizing: border-box;
 
-
-
 }
 
 .topnav a:hover{
   border-bottom: 2px solid #000;
   margin-bottom: 3px;
+}
+
+#hideMenu{
+ width: 13px;
+ height: 13px;
+}
+.wrapperHideMenu{
+  margin: 0 auto;
+}
+.hide{
+  display: none;
+  padding: 0 !important;
 }
 
 .icon {
