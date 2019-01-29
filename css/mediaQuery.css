@@ -6,47 +6,46 @@
 }
 @media screen and (max-width: 999px){
   header{
-    position: inherit;
+    position: relative;
   }
-  a{
-    padding: 7px ;
-  }
-  .backgroundHeader{
-        width: 70%;
-  }
-  .show{
+  .headerWrapper{
     display: block;
   }
-  .headerUl{
+  a.icon{
+    float: right;
+    display: block;
+    color: #000;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    
+  }
+  nav{
     display: none;
-    flex-direction: column;
     width: 100%;
-    background-color: rgba(#fff);
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-  }
-  header ul li {
-  }
-  header ul{
-    padding-left: 0;
     background: #ffffffc9;
+
   }
+.topnav{
+    flex-direction: column;
+}
 
 }
 @media screen and (max-width: 767px){
-  header, .backgroundHeader{
+  .wrapper {
     width: 95%;
+  }
+  .headerWrapper {
+    margin: 0 auto;
     max-width: 540px;
   }
-  .container {
-    width: 95%;
+  .backgroundHeader{
+    max-width: 540px
   }
-
 }
 @media screen and (max-width: 570px){
 .container{
     padding: 3%;
+
   }
 }
 @media screen and (max-width: 414px){

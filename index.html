@@ -14,27 +14,22 @@
   <script src="js/script.js"></script>
 </head>
 <body>
+  <div class="wrapper">
     <header>
-      <div class="backgroundHeader menu"></div>
-      <img src="img/logo.png" class="logoIco" alt="..."href="#">
-      <button class="show btn btn-outline-light" ><img src="img/button1.png" alt=""></button>
-      <ul class="headerUl pb-1">
-        <a href="#">
-        <li>
-            <span>Генератор текста</span>
-        </li>
-      </a>
-      <a href="#" >
-        <li>
-            <span>Полезно знать</span>
-        </li>
-      </a>
-          <a href="#">
-            <li>
-            <span>О нас</span>
-          </li>
-          </a>
-      </ul>
+      <div class="headerWrapper">
+        <div class="backgroundHeader menu"></div>
+        <div class="logo">
+          <img src="img/logo.png" class="logoIco" alt="..."href="#">
+        </div>
+        <a id="menu" href="#" class="icon">&#9776;</a>
+        <nav>
+          <div class="topnav" id="myTopNav">
+            <a href="#">Генератор текста</a>
+            <a href="#">Полезно знать</a>
+            <a href="#">О нас</a>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <div class="container">
@@ -67,12 +62,12 @@
       </div>
 
         <p class="h5" >Чем грозит взлом аккаунта?
-        <ul>Если будете использовать ненадежный пароль, хакер сможет:
-          <li>Украсть данные вашей карты.</li>
-          <li>Получить доступ к вашим другим аккаунтам.</li>
-          <li>Уничтожить ваш сайт.</li>
-          <li>Украсть любую личную информацию.</li>
-        </ul>
+        <p>Если будете использовать ненадежный пароль, хакер сможет:
+          <p>Украсть данные вашей карты.</p>
+          <p>Получить доступ к вашим другим аккаунтам.</p>
+          <p>Уничтожить ваш сайт.</p>
+          <p>Украсть любую личную информацию.</p>
+        </p>
        </p>
        <div id="info" class="m-4">
           <a href="https://www.instagram.com/ne_imba/" target="_blank"><img class="ico" src="img/instagram.png" alt=""></a>
@@ -83,5 +78,6 @@
     </div>
   <footer>
   </footer>
+  </div>
 </body>
 </html>

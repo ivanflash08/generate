@@ -1,14 +1,20 @@
-header{
+.wrapper{
   width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+header{
   max-width: 1140px;
-  height: 80px;
-  box-sizing: border-box;
+  min-height: 80px;
   z-index: 1;
   margin: 0 auto;
   border: none;
   padding: 0;
   position: sticky;
   top: 0;
+  flex-direction: row;
+  width: 100%
 }
 
 body{
@@ -16,43 +22,15 @@ body{
   background-size: cover;
   display: block;
 }
-ul{
-  list-style: none;
-  text-align: left;
-  font-weight: 700;
-}
-a{
-  font-weight: 400;
-  transition: .4s;
-}
-a:hover{
-    background: rgba(192, 217, 214, 0.83);
-}
-a:active{
-  background: rgba(164, 201, 222, 0.83);
-}
-span{
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #000;
-  text-decoration: none;
-
-}
-a {
-  margin: 0 15px;
-}
-a:hover {
-  text-decoration: none;
-}
 
 .backgroundHeader{
-    background: linear-gradient( #4c9287, #ffffffc9);
-    z-index: -100;
-    transition: 0.5s;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    opacity: 0;
+  background: linear-gradient( #4c928700, #ffffffc9);
+  z-index: -100;
+  transition: 0.5s;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  opacity: 0;
 }
 .fixed {
   opacity: 1;
@@ -63,17 +41,47 @@ a:hover {
   cursor: pointer;
   float: left;
 }
+nav{
+border-radius:  0 0 5px 5px;
+}
 
+.topnav{
+  margin: 0 auto;
+  display: flex;
+  float: right;
+  font-size: 1.2rem;
+  margin-top: 0px;
+}
+
+.topnav a {
+  margin: 5px;
+  color: #000;
+  text-align: center;
+  padding: 10px 14px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-sizing: border-box;
+
+
+
+}
+
+.topnav a:hover{
+  border-bottom: 2px solid #000;
+  margin-bottom: 3px;
+}
+
+.icon {
+  display: none;
+}
+/*  */
+/*  */
+/*  */
 .ico{
   height: 35px;
   width: 35px;
 }
 
-.headerUl{
-  display: flex;
-  float: right;
-  margin: 20px auto;
-}
 .show{
   margin-top: 20px !important;
   margin-right: 5px !important;
@@ -92,8 +100,8 @@ a:hover {
   display: none;
 }
 .h2{
-    font-family: Philosopher;
-    font-weight: 700;
+  font-family: Philosopher;
+  font-weight: 700;
 }
 .h5{
   animation: show 3s ;
@@ -105,7 +113,6 @@ p{
 
 .container{
   min-height: 855px;
-  width: 70%;
   padding: 60px 60px 0 60px;
   margin-bottom: 80px;
   border-radius: 4px;
@@ -134,8 +141,8 @@ img{
 }
 
 .blockType{
-display: flex;
-justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 
 }
 
@@ -148,9 +155,9 @@ justify-content: space-around;
 }
 
 .checkbox{
-display: flex;
-flex-direction: column;
-padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
 }
 
 input{
@@ -163,25 +170,27 @@ input{
 }
 
 .result{
-height: 100px;
+  height: 100px;
 }
 
 #userButton{
-display: none;
+  display: none;
 }
 
 #userButton1{
-height: 37px;
-margin: 5px auto;
-display: block;
-animation: show 1s;
+  height: 37px;
+  margin: 5px auto;
+  display: block;
+  animation: show 1s;
 }
 
 
 /* Стили ползунка */
 input[type=range]{
     -webkit-appearance: none;
-        width: 90%;
+    width: 90%;
+    border-radius: 5px;
+
 }
 
 input[type=range]::-webkit-slider-runnable-track {

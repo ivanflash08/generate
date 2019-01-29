@@ -125,39 +125,49 @@ function generate() {
 
 //header Menu
 
- let menu = document.querySelector('.menu');
+  let menu = document.querySelector('.menu');
 
- let menuBottom = menu.getBoundingClientRect().bottom + window.pageYOffset;
- window.onscroll = function() {
-    if (document.documentElement.clientWidth > 990) {
+  let menuBottom = menu.getBoundingClientRect().bottom + window.pageYOffset;
+  window.onscroll = function() {
+    if (document.documentElement.clientWidth > 982) {
 
        if (menu.classList.contains('fixed') && window.pageYOffset < 10) {
          menu.classList.remove('fixed');
        } else if (window.pageYOffset > 10) {
          menu.classList.add('fixed');
        }
-       console.log(window.pageYOffset);
+       // console.log(window.pageYOffset);
      }
    }
 
+  document.querySelector('#menu').onclick = function header() {
+    let pages = document.querySelector('#myTopNav');
 
-  window.onmousemove = function () {
+    if (pages.className === 'topnav'){
+      pages.className += 'responsive';
+
+    }
+    else{
+      pages.className = 'topnav';
+
+    }
+
+  }
+
+  let el = function al() {
      if (document.documentElement.clientWidth > 990){
-     nav.style.display= 'flex';
-     headerHeight.style.height = '80px';
+       nav.style.display ='flex';
     }
    }
 ////////показать спрятать меню
   let headerHeight = document.querySelector('header');
-  let nav = document.querySelector('.headerUl');
-  let showHide = document.querySelector('.show').onclick =function toggle_visibility(){
+  let nav = document.querySelector('nav');
+  let showHide = document.querySelector('#menu').onclick =function toggle_visibility(){
       if (nav.style.display =='flex'){
           nav.style.display ='none';
-          headerHeight.style.height = '80px';
           menu.classList.remove('fixed')
         }
       else{
-         headerHeight.style.height = '210px';
          nav.style.display= 'flex';
          menu.classList.add('fixed')
        }
