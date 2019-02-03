@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/mediaQuery.css">
   <link rel="stylesheet" href="css/checkBox.css">
 
-  <script src="js/script.js"></script>
+  <script src="js/editText.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -19,7 +19,9 @@
       <div class="headerWrapper">
         <div class="backgroundHeader menu"></div>
         <div class="logo">
-          <img src="img/logo.png" class="logoIco" alt="..."href="#">
+          <a href="index.html">
+          <img src="img/logo.png" class="logoIco" >
+        </a>
         </div>
         <a id="menu" href="#" class="icon">&#9776;</a>
         <nav>
@@ -34,11 +36,19 @@
         </nav>
       </div>
     </header>
-
     <div class="container">
-      <p class="h2 m-3" role="alert">Добро пожаловать в Генератор паролей!</p>
-      <p class="h5 m-3" >Здесь можно создать пароли разной длины и сложности </p>
+      <p class="h2 m-3" role="alert">Добро пожаловать в конвертер регистров!</p>
+      <p class="h5 m-3" >Здесь можно задать регистр для вашего текста</p>
+
+
       <div class="checkbox justify-content-center">
+        <div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">добавте ваш текст</span>
+  </div>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
+        <br><br>
         <div class="blockType">
           <div class="wrapp">
               <input type="checkbox" id="numStyle" class="css-checkbox f"/>
@@ -50,38 +60,27 @@
           </div>
             <div class="wrapp">
               <input  type="checkbox" id="regStyle" class="css-checkbox f"/>
-	  					<label for="regStyle" name="regStyle_lbl" class="css-label lite-x-green "><p class="font">Прописные</p></label>
+              <label for="regStyle" name="regStyle_lbl" class="css-label lite-x-green "><p class="font">Прописные</p></label>
           </div>
         </div>
-      </div>
-      <div class="blockOne pb-1 m-1" title="Задайте значения для создания пароля">
-          <p class="font">Длина пароля</p>
-          <input class="f" type="range" id="rngOne" value="0" min="4" max="30" step="1">
-          <div id="rngInfo" class="ml-2 font">4</div>
-      </div>
-      <div class="result " >
-        <div id="outPassword">Выберите тип создания пароля!</div>
-        <button id="userButton" type="button" class="btn btn-dark" title="Скопировать в буфер ">Скопировать</button>
+        <br><br>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">обработаный текст</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
       </div>
 
-        <p class="h5" >Чем грозит взлом аккаунта?
-        <p>Если будете использовать ненадежный пароль, хакер сможет:
-          <p>Украсть данные вашей карты.</p>
-          <p>Получить доступ к вашим другим аккаунтам.</p>
-          <p>Уничтожить ваш сайт.</p>
-          <p>Украсть любую личную информацию.</p>
-        </p>
-       </p>
        <div id="info" class="m-4">
           <a href="https://www.instagram.com/ne_imba/" target="_blank"><img class="ico m-2" src="img/instagram.png" alt=""></a>
           <a href="https://www.facebook.com/profile.php?id=100011982708621" target="_blank"><img class="ico m-2" src="img/facebook-f.png" alt=""></a>
           <a href="https://web.telegram.org/#/im?p=u516398846_11423432021464098220" target="_blank"><img class="ico m-2" src="img/telegram.png" alt=""></a>
-        </button>
       </div>
     </div>
-  <footer>
-    <p class="footer">© Yasinskiy 2019</p>
-  </footer>
+    <footer>
+      <p class="footer">© Yasinskiy 2019</p>
+    </footer>
   </div>
 </body>
 </html>

@@ -129,37 +129,31 @@ function generate() {
   let menuBottom = menu.getBoundingClientRect().bottom + window.pageYOffset;
   window.onscroll = function() {
       if (document.documentElement.clientWidth > 982) {
-        if (menu.classList.contains('fixed') && window.pageYOffset < 10) {
-          menu.classList.remove('fixed');
+        if (menu.style.opacity = '0' && window.pageYOffset < 10) {
+          menu.style.opacity ='0';
         }
         else if (window.pageYOffset > 10) {
-          menu.classList.add('fixed');
+          menu.style.opacity ='1';
         }
        // console.log(window.pageYOffset);
       }
-   
 
-}
+  }
 ////////показать спрятать меню
   document.querySelector('.hide').onclick = function () {
     nav.style.display ='none';
-    menu.classList.remove('fixed')
+      menu.style.opacity ='0';
   }
-  let headerHeight = document.querySelector('header');
   let nav = document.querySelector('nav');
   let showHide = document.querySelector('#menu').onclick =function toggle_visibility(){
       if (nav.style.display =='flex'){
           nav.style.display ='none';
-          menu.classList.remove('fixed')
+          menu.style.opacity ='0';
         }
       else{
          nav.style.display= 'flex';
-         menu.classList.add('fixed')
+         menu.style.opacity ='1';
        }
      }
-     let response = document.querySelector.onresize = function () {
-       if (response < 1000){
-         alert('123');
-       }
-     }
+
 }

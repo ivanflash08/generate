@@ -24,7 +24,7 @@ body{
 }
 
 .backgroundHeader{
-  background: linear-gradient( #4c928700, #ffffffc9);
+  background: linear-gradient( #4c9287ed, #ffffffc9);
   z-index: -100;
   transition: 0.5s;
   position: absolute;
@@ -32,9 +32,7 @@ body{
   height: 80px;
   opacity: 0;
 }
-.fixed {
-  opacity: 1;
-}
+
 .logoIco{
   width: 170px;
   height: 80px;
@@ -105,6 +103,7 @@ border-radius:  0 0 5px 5px;
 #info{
   justify-content: center;
   margin-top: 50px!important;
+
 }
 
 #start{
@@ -115,7 +114,7 @@ border-radius:  0 0 5px 5px;
   font-weight: 700;
 }
 .h5{
-  animation: show 3s ;
+  animation: show 1.5s ;
   padding: 30px 0;
 }
 p{
@@ -125,7 +124,7 @@ p{
 .container{
   min-height: 855px;
   padding: 60px 60px 0 60px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   border-radius: 4px;
   background-color: #ffffffc9;
   border-color: #e5e6e9 #dfe0e4 #d0d1d5;
@@ -193,6 +192,10 @@ input{
   margin: 5px auto;
   display: block;
   animation: show 1s;
+}
+footer .footer{
+  text-align: center;
+  color: #e4e3e3;
 }
 
 
