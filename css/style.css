@@ -61,7 +61,8 @@ border-radius:  0 0 5px 5px;
   font-size: 1.2rem;
   text-decoration: none;
   box-sizing: border-box;
-
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .topnav a:hover{

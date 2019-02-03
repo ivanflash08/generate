@@ -2,7 +2,6 @@ window.onload = function() {
 
   let rng1 = document.getElementById('rngOne');
   let con = document.getElementById('outPassword');
-
   let checkBoxOne = document.getElementById('numStyle');
   let checkBoxTwo = document.getElementById('stringStyle');
   let checkBoxThere = document.getElementById('regStyle');
@@ -129,20 +128,22 @@ function generate() {
 
   let menuBottom = menu.getBoundingClientRect().bottom + window.pageYOffset;
   window.onscroll = function() {
-    if (document.documentElement.clientWidth > 982) {
-       if (menu.classList.contains('fixed') && window.pageYOffset < 10) {
-         menu.classList.remove('fixed');
-       }
-       else if (window.pageYOffset > 10) {
-         menu.classList.add('fixed');
-       }
+      if (document.documentElement.clientWidth > 982) {
+        if (menu.classList.contains('fixed') && window.pageYOffset < 10) {
+          menu.classList.remove('fixed');
+        }
+        else if (window.pageYOffset > 10) {
+          menu.classList.add('fixed');
+        }
        // console.log(window.pageYOffset);
-     }
-   }
+      }
+   
 
+}
 ////////показать спрятать меню
   document.querySelector('.hide').onclick = function () {
     nav.style.display ='none';
+    menu.classList.remove('fixed')
   }
   let headerHeight = document.querySelector('header');
   let nav = document.querySelector('nav');
@@ -161,6 +162,4 @@ function generate() {
          alert('123');
        }
      }
-
-
 }
