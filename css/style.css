@@ -48,7 +48,7 @@ border-radius:  0 0 5px 5px;
   display: flex;
   float: right;
   font-size: 1.2rem;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 .topnav a {
@@ -233,4 +233,5 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     background: #ccc;
 }
 
-/* стили чекбоксов*/
+
+/* /////////editText/////////*/

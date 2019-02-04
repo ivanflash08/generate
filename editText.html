@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mediaQuery.css">
   <link rel="stylesheet" href="css/checkBox.css">
+  <link rel="stylesheet" href="css/editText.css">
 
   <script src="js/editText.js"></script>
 </head>
@@ -40,36 +41,38 @@
       <p class="h2 m-3" role="alert">Добро пожаловать в конвертер регистров!</p>
       <p class="h5 m-3" >Здесь можно задать регистр для вашего текста</p>
 
+    <div class="checkbox justify-content-center">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Ваш текст</span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" placeholder="Введите текст" id="userText"></textarea>
+      </div>
 
-      <div class="checkbox justify-content-center">
-        <div class="input-group">
-  <div class="input-group-prepend">
-    <span class="input-group-text">добавте ваш текст</span>
-  </div>
-  <textarea class="form-control" aria-label="With textarea"></textarea>
-</div>
-        <br><br>
-        <div class="blockType">
+
+      <div class="variable">
+        <div class="wrapp">
+          <p id="symbol">Общее количество символов: 0</p>
+        </div>
+        <div class="wrapp">
+            <input type="checkbox" id="small" class="css-checkbox f"/>
+              <label for="small" name="numStyle" class="css-label lite-x-green"><p class="font">пропись</p></label>
+        </div>
           <div class="wrapp">
-              <input type="checkbox" id="numStyle" class="css-checkbox f"/>
-                <label for="numStyle" name="numStyle" class="css-label lite-x-green"><p class="font">Цыфры</p></label>
-          </div>
-            <div class="wrapp">
-              <input type="checkbox" id="stringStyle" class="css-checkbox f"/>
-              <label for="stringStyle" name="stringStyle_lbl" class="css-label lite-x-green"><p class="font">Строчные</p></label>
-          </div>
-            <div class="wrapp">
-              <input  type="checkbox" id="regStyle" class="css-checkbox f"/>
-              <label for="regStyle" name="regStyle_lbl" class="css-label lite-x-green "><p class="font">Прописные</p></label>
-          </div>
+            <input type="checkbox" id="large" class="css-checkbox f"/>
+            <label for="large" name="stringStyle_lbl" class="css-label lite-x-green"><p class="font">ЗАГЛАВНЫЕ</p></label>
         </div>
-        <br><br>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text">обработаный текст</span>
-          </div>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
+          <div class="wrapp">
+            <input  type="checkbox" id="everyOne" class="css-checkbox f"/>
+            <label for="everyOne" name="regStyle_lbl" class="css-label lite-x-green "><p class="font">Каждое Слово С Заглавной</p></label>
         </div>
+
+
+      <div class="input-group  mt-4">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Результат</span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" placeholder="Обработаный текст" id="resultReg" disabled></textarea>
       </div>
 
        <div id="info" class="m-4">
@@ -78,6 +81,7 @@
           <a href="https://web.telegram.org/#/im?p=u516398846_11423432021464098220" target="_blank"><img class="ico m-2" src="img/telegram.png" alt=""></a>
       </div>
     </div>
+  </div>
     <footer>
       <p class="footer">© Yasinskiy 2019</p>
     </footer>

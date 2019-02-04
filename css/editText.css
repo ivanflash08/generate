@@ -1,0 +1,15 @@
+textarea{
+ min-height: 150px;
+ overflow-y: hidden;
+ resize: none;
+}
+.wrapp{
+  margin: 10px 0;
+}
+.variable{
+  display: flex;
+  flex-direction: column;
+}
+.lol{
+  text-transform: capitalize;
+}
