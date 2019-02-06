@@ -93,7 +93,7 @@ function generate() {
   }
 
 
-  var elements = document.querySelectorAll(".f");
+  let elements = document.querySelectorAll(".f");
 
   for (var i = 0; i < elements.length; i++) {
     elements[i].onchange = function(event){
@@ -108,8 +108,8 @@ function generate() {
   var button = document.getElementById('userButton');
   function CopyElement() {
     button.addEventListener('click', function () {
-      var ta = document.getElementById('outPassword');
-      var range = document.createRange();
+      let ta = document.getElementById('outPassword');
+      let range = document.createRange();
       range.selectNode(ta);
       window.getSelection().addRange(range);
       try {

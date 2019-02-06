@@ -141,6 +141,7 @@ img{
 }
 .font{
   font-size: 1.3rem;
+  cursor: pointer;
 }
 .blockOne{
   background-color: #4e958794;
@@ -185,6 +186,7 @@ input{
 
 #userButton{
   display: none;
+  animation: show 1s;
 }
 
 #userButton1{

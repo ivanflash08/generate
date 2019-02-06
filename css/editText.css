@@ -1,6 +1,6 @@
 textarea{
  min-height: 150px;
- overflow-y: hidden;
+ overflow: auto;
  resize: none;
 }
 .wrapp{
